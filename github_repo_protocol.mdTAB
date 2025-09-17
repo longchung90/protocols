@@ -1,0 +1,69 @@
+# 🚀 Protocol: How to Create a GitHub Repository (Interface + Terminal)
+
+This protocol explains how to create and set up a GitHub repository using both the **GitHub interface (web)** and the **terminal (local machine)**.  
+
+---
+
+## ✅ Step 1: Create Repository on GitHub (Interface)
+
+1. Log in to [GitHub](https://github.com/).
+2. Click **➕ New Repository**.
+3. Enter a **repository name** (e.g., `churning_prediction_modeling`).
+4. Add a short description and choose **Public/Private**.
+5. ⚠️ Leave **“Initialize with README” unchecked** if you already have local files.
+6. Click **Create Repository**.  
+   👉 Copy the repo URL (HTTPS):  
+https://github.com/<username>/<repo_name>.git
+
+---
+
+## ✅ Step 2: Prepare Local Project (Terminal)
+
+1. Navigate to your base GitHub folder:
+```bash
+cd ~/Documents/GitHub
+Create your project folder with a professional structure:
+mkdir -p churning_prediction_modeling/{data/raw,data/processed,notebooks,scripts,results/figures,results/tables,docs}
+cd churning_prediction_modeling
+Create initial files:
+touch README.md requirements.txt .gitignore
+📂 Recommended Folder Layout
+churning_prediction_modeling/
+│── data/
+│   ├── raw/          # Original datasets (read-only)
+│   └── processed/    # Cleaned/feature-engineered data
+│
+│── notebooks/        # Jupyter notebooks (exploration & modeling)
+│
+│── scripts/          # Python scripts / helper functions
+│
+│── results/
+│   ├── figures/      # Plots, charts, dashboards
+│   └── tables/       # Summaries, output tables
+│
+│── docs/             # Extra documentation, references
+│── README.md         # Project overview
+│── requirements.txt  # Python dependencies
+│── .gitignore        # Files/folders to ignore in Git
+✅ Step 3: Initialise Git and Link Remote
+Initialise Git:
+git init
+Link GitHub remote:
+git remote add origin https://github.com/<username>/<repo_name>.git
+Verify:
+git remote -v
+✅ Step 4: First Commit & Push
+Stage all files:
+git add .
+Commit:
+git commit -m "Initial commit with project structure"
+Rename branch & push:
+git branch -M main
+git push -u origin main
+🔄 Ongoing Workflow
+Stage changes:
+git add .
+Commit changes:
+git commit -m "Your message"
+Push to GitHub:
+git push
