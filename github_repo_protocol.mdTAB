@@ -45,14 +45,16 @@ churning_prediction_modeling/
 │── README.md         # Project overview
 │── requirements.txt  # Python dependencies
 │── .gitignore        # Files/folders to ignore in Git
-✅ Step 3: Initialise Git and Link Remote
+
+## ✅ Step 3: Initialise Git and Link Remote
 Initialise Git:
 git init
 Link GitHub remote:
 git remote add origin https://github.com/<username>/<repo_name>.git
 Verify:
 git remote -v
-✅ Step 4: First Commit & Push
+
+## ✅ Step 4: First Commit & Push
 Stage all files:
 git add .
 Commit:
@@ -60,7 +62,8 @@ git commit -m "Initial commit with project structure"
 Rename branch & push:
 git branch -M main
 git push -u origin main
-🔄 Ongoing Workflow
+
+## 🔄 Ongoing Workflow
 Stage changes:
 git add .
 Commit changes:
